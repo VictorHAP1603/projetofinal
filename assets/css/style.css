@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+ }
+body{
+    background: radial-gradient(104.36% 567.44% at 5.8% 95.79%, #0E091B 54.69%, #5B26A0 100%)
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}   
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header{
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.flex{
+    display: flex;
+}
+.links-header{
+    padding-left: 30px;
+    font-size: 19px;
+}
+#link-quem-sou, #link-projetos, #link-conhecimentos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#link-quem-sou::after{
+    content: "";
+    width: 60%;
+    height: 3px;
+    margin-top: -4px;
+    background-color: rgb(255, 255, 255);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3 ease-in-out 0s;
+    transition: all 0.3 ease-in-out 0s;
+}
+#link-quem-sou:hover::after{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.secao1{
+    color: #fff;
+    margin-top: 210px;
+    justify-content: space-between;
+}
+h2{
+    font-size: 23px;
+    font-weight: 400;
+}
+h1{
+    font-size: 30px;
+} 
